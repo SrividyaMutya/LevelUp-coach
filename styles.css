@@ -1,0 +1,273 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #12172B;
+  color: #EDE6D6;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 32px 20px;
+}
+
+.app-inner {
+  width: 100%;
+  max-width: 720px;
+}
+
+.eyebrow {
+  font-family: Menlo, monospace;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: #B8935A;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.header-row h1 {
+  font-size: 28px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, #B8935A, transparent);
+  margin-top: 16px;
+}
+
+.dial-group {
+  display: flex;
+  gap: 18px;
+  font-family: Menlo, monospace;
+  font-size: 12px;
+  color: #B8935A;
+}
+
+.dial-label {
+  opacity: 0.6;
+  font-size: 10px;
+}
+
+.dial-bars {
+  display: flex;
+  gap: 3px;
+  margin-top: 4px;
+}
+
+.dial-bar {
+  width: 18px;
+  height: 6px;
+  border-radius: 2px;
+  background: #3A3F55;
+}
+
+.dial-bar.active {
+  background: #B8935A;
+}
+
+.card {
+  background: #181D33;
+  border: 1px solid #2C3350;
+  border-radius: 10px;
+  padding: 28px;
+  margin-bottom: 20px;
+}
+
+.error-box {
+  background: #3A2420;
+  border: 1px solid #C4634A;
+  color: #F0C9BC;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-family: Menlo, monospace;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.mode-toggle {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.mode-btn {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #2C3350;
+  background: transparent;
+  color: #8B90A8;
+  font-family: Menlo, monospace;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.mode-btn.active {
+  border: 1px solid #B8935A;
+  background: rgba(184, 147, 90, 0.12);
+  color: #EDE6D6;
+}
+
+label.field-label {
+  font-size: 13px;
+  color: #8B90A8;
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 6px;
+  border: 1px solid #2C3350;
+  background: #0E1226;
+  color: #EDE6D6;
+  font-size: 16px;
+  font-family: Georgia, serif;
+  margin-bottom: 20px;
+}
+
+textarea {
+  resize: vertical;
+  font-size: 15px;
+}
+
+.btn-primary {
+  padding: 14px 24px;
+  border-radius: 6px;
+  border: none;
+  background: #B8935A;
+  color: #12172B;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: Menlo, monospace;
+  letter-spacing: 0.05em;
+}
+
+.btn-primary:disabled {
+  background: #3A3F55;
+  cursor: default;
+}
+
+.btn-primary.full-width {
+  width: 100%;
+}
+
+.loading-card {
+  text-align: center;
+  color: #8B90A8;
+  font-family: Menlo, monospace;
+  font-size: 13px;
+  padding: 40px;
+}
+
+.q-eyebrow {
+  font-family: Menlo, monospace;
+  font-size: 11px;
+  color: #B8935A;
+  margin-bottom: 10px;
+  letter-spacing: 0.1em;
+}
+
+.q-text {
+  font-size: 19px;
+  line-height: 1.5;
+  margin: 0 0 22px;
+}
+
+.score-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.score-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Menlo, monospace;
+  font-size: 17px;
+  flex-shrink: 0;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.score-meta-label {
+  font-family: Menlo, monospace;
+  font-size: 11px;
+  color: #8B90A8;
+}
+
+.score-meta-value {
+  font-family: Menlo, monospace;
+  font-size: 12px;
+  color: #B8935A;
+  margin-top: 2px;
+}
+
+.feedback-row {
+  margin-bottom: 16px;
+}
+
+.feedback-label {
+  font-family: Menlo, monospace;
+  font-size: 11px;
+  margin-bottom: 4px;
+  letter-spacing: 0.08em;
+}
+
+.feedback-text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.log-title {
+  font-family: Menlo, monospace;
+  font-size: 11px;
+  color: #8B90A8;
+  margin-bottom: 10px;
+  letter-spacing: 0.1em;
+}
+
+.log-item {
+  border-left: 2px solid #2C3350;
+  padding-left: 14px;
+  margin-bottom: 14px;
+  font-size: 13px;
+  color: #8B90A8;
+}
+
+.log-item .log-question {
+  color: #EDE6D6;
+}
+
+.log-meta {
+  font-family: Menlo, monospace;
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.summary-stat {
+  display: inline-block;
+  margin-right: 24px;
+  font-family: Menlo, monospace;
+}
