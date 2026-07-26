@@ -1,3 +1,4 @@
+
 // LevelUp-coach
 // Plain JavaScript, no JSX. Uses React.createElement directly.
 // Talks to the FastAPI backend at API_BASE.
@@ -5,7 +6,7 @@
 const { useState, useRef, useEffect } = React;
 const h = React.createElement;
 
-const API_BASE = "http://localhost:8000";
+const API_BASE = "";
 const DIFFICULTY_LEVELS = ["Foundational", "Intermediate", "Advanced", "Expert"];
 
 // ---------- API helpers ----------
